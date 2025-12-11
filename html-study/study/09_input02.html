@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--input의 여러 타입들-->
+  <br method="get" action="#">
+    <label for="username" 아이디:>
+      <input 
+      type="text" 
+      name="username" 
+      id="username"
+      placeholder="아이디를 입력하시오"
+      >
+    </label>
+    <br></br>
+
+    <label for="password" 비밀번호:>
+      <input 
+      type="password" 
+      name="password" 
+      id="password"
+      placeholder="비밀번호를 입력하시오"
+      >
+    </label>
+    <br></br>
+
+    <label for="email" 비밀번호:>
+      <input 
+      type="email" 
+      name="email" 
+      id="email"
+      placeholder="이메일을 입력하시오"
+      >
+    </label>
+    <br></br>
+
+    <label for="age" 연령:>
+      <input 
+      type="number" 
+      name="age" 
+      id="age"
+      placeholder="나이를 입력하시오"
+      min="1"
+      max="100"
+      >
+    </label>
+    <br></br>
+    <button type="submit">제출</button>
+    
+  </form>
+<br/><br/>
+  <form>
+    <!--checkbox:주어진 항목 중 다수를 선택-->
+    <!--반드시 value를 기입해줘야한다 -->
+      <input 
+        type="checkbox"
+        name="skill"
+        value="java"
+      >자바
+
+      <input 
+        type="checkbox"
+        name="skill"
+        value="python"
+      >파이썬
+
+      <input 
+        type="checkbox"
+        name="skill"
+        value="javascript"
+      >자바스크립트
+  </form>
+  <br/><br/>
+  <form>
+    <!-- radio:주어진 리스트 중에 하나를 선택 -->
+    <!--name으로 그룹화 할 수 있음  -->
+    <input name="a" type="radio" value="1">1
+    <input name="a" type="radio" value="2">2 
+    <input name="b" type="radio" value="3">3
+    <input name="b" type="radio" value="4">4
+  </form>
+
+  <br/><br/>
+  <!-- select 요소:드랍박스 리스트중에 하나를 선택 -->
+  <form>
+    <select name="fruit" >
+      <option value="apple">사과</option>
+      <option value="banana">바나나</option>
+      <option value="cacao">카카오</option>
+    </select>
+</form>
+
+  <form>
+      <textarea name="content" row="10" cols="50" >
+      </textarea>
+      <button>전송</button>
+  </form>
+
+  <br/><br/>
+
+  <!--미디어관련 input-->
+  <form>
+    <label for="file">파일선택:</label>
+    <input type="file" id="file" name="upload_file">
+
+  </form>
+
+  
+</body>
+</html>
