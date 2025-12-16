@@ -1,0 +1,66 @@
+h1{
+  color: white;
+  padding:20px ;
+  text-align: center;
+}
+
+main{
+  width:80vw;
+  margin:50px auto;
+}
+
+
+.board{
+  width:100%;
+  font-size: 14px;
+  border-collapse: collapse;
+  table-layout:fixed;
+}
+
+.board th,
+.board td{
+  /* 
+  테이블에서 위아래 폭은 height 지정x
+  ->보통 위아래 padding으로 조절
+  */
+  padding:12px;
+  border:none;
+  border-bottom:1px solid #eee;
+  text-align: center;
+}
+
+.board thead th{
+  background-color: #eee;
+  border-bottom: 2px solid #ccc;
+}
+
+.board tr>td:nth-child(1),
+.board tr>td:nth-child(1){
+  width: 70px;
+}
+
+.board tr>td:nth-child(2),
+.board tr>td:nth-child(2){
+  width: 120px;
+}
+.board tr>td:nth-child(3),
+.board tr>td:nth-child(3){
+  width: 90px;
+}
+.board tr>td:nth-child(4),
+.board tr>td:nth-child(4){
+  width: 100px;
+}
+.board tr>td:nth-child(5),
+.board tr>td:nth-child(5){
+  width: 40px;
+}
+
+.board tbody tr:nth-child(even){
+  background-color: #fafafa;
+}
+
+.board tbody tr:hover{
+  cursor:pointer;
+  background-color: #f0f0f0;
+}
