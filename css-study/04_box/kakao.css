@@ -1,0 +1,173 @@
+body{
+  margin:0;
+  padding:0;
+  /* 높이==브라우저 홤녀  */
+  height:100vh;
+}
+
+.container{
+  width:100%;
+  height:100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-page{
+  width:540;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  margin-bottom:40px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+
+.login-box{
+  width:100%;
+  /* 콘텐츠+패딩+보더->width */
+  box-sizing:border-box;
+  border:1px solid #dbdbdb;
+  padding: 50px 70px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  
+}
+
+.login-form{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  gap:8px
+}
+
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+  width:100%;
+  height:40px;
+  box-sizing:border-box;
+  border:none;
+  border-bottom:2px solid lightgray;
+  /* 눌렀을때 네모 안 생기게 */
+  outline:none;
+
+  margin-bottom:10px;
+
+  font-size:18px;
+  color:#222;
+  /* 상 좌우 하 */
+  padding:10px 0 8px
+}
+
+/* 비밀번호 가독성 */
+.login-form input[type="password"]{
+  letter-spacing: 0.5rem;
+}
+
+.login-form input::placeholder{
+  letter-spacing: 0.05rem;
+}
+
+.login-form input:focus{
+  border-bottom:2px solid black;
+}
+
+.save-login{
+  display: flex;
+  height: 20px;
+  align-items: center;
+  font-size: 9px;
+  color: #777;
+}
+
+.save-login input{
+  height: 9px;
+  cursor:pointer;
+  margin-right:8px;
+  text-align: center;
+
+}
+
+.btn-primary{
+  width:100%;
+  background-color: #fee500;
+  border-color:transparent;
+  margin-bottom:5px;
+  cursor:pointer;
+}
+
+.btn-primary:hover{
+  background-color: #f4dc00;
+}
+
+
+.or-box{
+  display:flex;
+  align-items: center;
+  gap:10px;
+  font-size: 11px;
+  color:#777;
+  cursor:default;
+  margin-bottom: 5px;
+  cursor:default;
+}
+
+
+.or-box::after,
+.or-box::before{
+  content:"";
+  flex-grow:1;
+  height:1px;
+  background-color: #dbdbdb;
+  
+
+}
+
+.btn-secondary{
+  width:100%;
+  border-color:transparent;
+  cursor:pointer;
+
+}
+
+.btn-secondary:hover{
+  background-color: #c5c2c2;
+}
+
+.login-links{
+  margin-top:15px;
+  display:flex;
+  align-items:center;
+  /* 요소들 중 양끝은 좌우로 붙이고 나머지 요소들은 간격을 동일하게 분배 */
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.login-links a{
+  color:#222;
+  text-decoration:none;
+}
+
+.link-group{
+  display:flex;
+  align-items: center;
+
+}
+
+.link-group a:nth-child(1)::after{
+  content:"";
+  display: inline-block;
+  width:1px;
+  height:10px;
+  background-color: #dbdbdb;
+
+}

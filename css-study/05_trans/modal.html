@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./modal.css">
+    <title>myModal</title>
+</head>
+<body>
+    <!-- 
+    모달창(팝업 창) 
+    클릭 이벤트 기반으로 동작하는 ui
+    실제로는 js로 구현함
+    -->
+    <input 
+        type="checkbox" 
+        id="modal-toggle"
+        hidden
+    />
+    <!-- 버튼역할 -->
+    <label for="modal-toggle" class="open-btn">모달 열기</label>
+    <!-- 모달(평소에는 숨겨져있음) -->
+    <div class="modal-bg">
+        <!-- modal-bg가 전체 창을 가린다 -->
+        <div class="modal">
+            <h2>모달창 이에요</h2>
+            <p>내용 입니다</p>
+            <label for="modal-toggle" class="close-btn">닫기</label>
+        </div>
+    </div>
+    <!-- 원래 컨텐츠 -->
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, quam maxime aliquam ea aut facilis temporibus sed doloremque totam, deleniti qui doloribus quaerat assumenda blanditiis in autem dolore. Distinctio, consequatur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt et molestias aliquam officia, optio odit, obcaecati quo minima temporibus fuga sint tempore eos, illo consectetur ex? Cum numquam impedit porro.</p>
+    </div>
+
+</body>
+</html>
